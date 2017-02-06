@@ -4,17 +4,48 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <div class="row">
-        <div class="col-md-1">
-           <label>Novel Id</label>
 
-        </div>
-        <div class="col-md-11">
-            <input type="text" />
+
+<div class="well well-lg">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Term Submission</div>
+        <div class="panel-body">
+            <div class="well well-sm">
+
+                <form method="POST" action="http://lnmtl.com/termProposition" accept-charset="UTF-8" autocomplete="off">
+                    <input name="_token" type="hidden" value="lsu5YjVWugao5azbPp52VbDBa63uXnaJMX26lDfl">
+                    <input name="type" type="hidden" value="create">
+                  
+
+                    <div class="form-group"> <label class="control-label" for="novel_id">Filter by Novel:</label> <select class="form-control" id="novel_id" autocomplete="0"> <option value="0">Don't Filter</option>  <option value="71">A Record of a Mortal's Journey to Immortality</option>  <option value="74">A Thought Through Eternity</option>  <option value="1">Against the Gods</option>  <option value="78">Alchemist God</option>  <option value="43">Ancient Godly Monarch</option>  <option value="31">Ancient Strengthening Technique</option>  <option value="52">Apocalypse Cockroach</option>  <option value="46">Battle Emperor</option>  <option value="79">Battle Frenzy</option>  <option value="12">Battle Through the Heavens</option>  <option value="80">Beast Piercing The Heavens</option>  <option value="47">Bringing The Farm To Live In Another World</option>  <option value="53">Chaotic Lightning Cultivation</option>  <option value="13">Chaotic Sword God</option>  <option value="18">Close Combat Mage</option>  <option value="86">Crazy Lich's Experimental Diary</option>  <option value="57">Cult of the Sacred Runes</option>  <option value="87">Cultivation Chat Group</option>  <option value="69">Demon's Diary</option>  <option value="11">Desolate Era</option>  <option value="38">Devouring The Heavens</option>  <option value="56">Dominating Sword Immortal</option>  <option value="29">Douluo Dalu</option>  <option value="30">Douluo Dalu 2 - The Unrivaled Tang-Clan</option>  <option value="96">Douluo Dalu 2.5 - God Realm's Legend</option>  <option value="85">Douluo Dalu 3 - Dragon King's Legend</option>  <option value="32">Dragon Marked War God</option>  <option value="61">Dragon-Blooded War God</option>  <option value="59">Emperor's Domination</option>  <option value="92">Evil Dragon Against The Heaven</option>  <option value="83">Five Way Heaven</option>  <option value="58">Galactic Dark Net</option>  <option value="36">Genius Sword Immortal</option>  <option value="42">God and Devil World</option>  <option value="48">God Of Slaughter</option>  <option value="113">God of Thunder</option>  <option value="91">Grasping Evil</option>  <option value="50">Great Demon King</option>  <option value="34">Hail the King</option>  <option value="14">Heavenly Jewel Change</option>  <option value="33">Heavenly Star</option>  <option value="82">History's Strongest Senior Brother</option>  <option value="6">I Shall Seal the Heavens</option>  <option value="75">I'm Really a Superstar</option>  <option value="49">Immortal Executioner</option>  <option value="24">Imperial God Emperor</option>  <option value="110">In Different World with Naruto System</option>  <option value="93">King of Gods</option>  <option value="111">Library of Heaven's Path</option>  <option value="27">Limitless Sword God</option>  <option value="7">Long Live Summons</option>  <option value="55">Lord Xue Ying</option>  <option value="63">Magic Chef of Ice and Fire</option>  <option value="117">Martial God</option>  <option value="4">Martial God Asura</option>  <option value="116">Martial God Conqueror</option>  <option value="22">Martial God Space</option>  <option value="8">Martial Movement Upheaval</option>  <option value="44">Martial Peak</option>  <option value="28">Martial World</option>  <option value="98">Miracle Throne</option>  <option value="115">Monster Factory</option>  <option value="100">Murdering Heaven Edge</option>  <option value="45">My Beautiful Teacher</option>  <option value="89">My Father in Law is Lu Bu</option>  <option value="39">My Wife is a Beautiful CEO</option>  <option value="118">Nine Yang Sword Saint</option>  <option value="112">Omni Genius</option>  <option value="109">Omni-Magician</option>  <option value="15">Otherworldly Evil Monarch</option>  <option value="107">Paradise of Demons and Gods</option>  <option value="76">Peerless Demonic Lord</option>  <option value="9">Peerless Martial God</option>  <option value="16">Perfect World</option>  <option value="41">Realms In The Firmament</option>  <option value="90">Rebirth of the Thief Who Roamed The World</option>  <option value="62">Release that Witch</option>  <option value="21">Renegade Immortal</option>  <option value="114">Returning from the Immortal World</option>  <option value="25">Sealed Divine Throne</option>  <option value="60">Shadow Rogue</option>  <option value="35">Shura's Wrath</option>  <option value="64">Skyfire Avenue</option>  <option value="23">Sovereign of the Three Realms</option>  <option value="108">Space Speedstar Hen</option>  <option value="81">Spirit Realm</option>  <option value="94">Spirit Vessel</option>  <option value="65">Star Martial God Technique</option>  <option value="99">Star Rank Hunter</option>  <option value="105">Stealing The Heavens</option>  <option value="101">Super Soldier King</option>  <option value="104">Supreme Arrow God</option>  <option value="19">Swallowed Star</option>  <option value="103">Sword Spirit</option>  <option value="2">Tales of Demons and Gods</option>  <option value="68">Tempest of the Stellar War</option>  <option value="95">The Amber Sword</option>  <option value="3">The Great Ruler</option>  <option value="97">The King's Avatar</option>  <option value="73">The Magus Era</option>  <option value="70">The Nine Cauldrons</option>  <option value="26">The Nine Godheads</option>  <option value="77">The Portal of Wonderland</option>  <option value="40">The Strongest Dan God</option>  <option value="17">Transcending the Nine Heavens</option>  <option value="72">Ultimate Teacher</option>  <option value="84">Undefeated God of War</option>  <option value="20">Upgrade Specialist in Another World</option>  <option value="66">Virtual World: Conquering the World</option>  <option value="67">Virtual World: The Legendary Thief</option>  <option value="106">War God Asura</option>  <option value="54">Warlock of the Magus World</option>  <option value="10">Way of Choices</option>  <option value="88">Womanizing Mage</option>  <option value="51">World Defying Dan God</option>  <option value="102">World of Cultivation</option>  <option value="37">Zhan Long</option>  </select> </div>
+
+
+                    <div class="form-group">
+                        <label for="raw" class="control-label">Original Chinese</label>
+                        <input class="form-control" name="raw" type="text" id="raw">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="meaning" class="control-label">What it means in english</label>
+                        <input class="form-control" name="meaning" type="text" id="meaning">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="author_note" class="control-label">Proposition note</label>
+                        <textarea class="form-control" rows="2" placeholder="Type additional informations why you think this change should be done. It is not required." name="author_note" cols="50" id="author_note"></textarea>
+                    </div>
+
+                    <div class="form-group"> <input class="btn btn-primary form-control" type="submit" value="Create Proposition"> </div>
+                </form>
+
+            </div>
         </div>
     </div>
+
+
 </div>
+
+
 
 
 <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -23,7 +54,7 @@
             <th>Length</th>
             <th>Term</th>
             <th>Meaning</th>
-            
+            <th>Send</th>
         </tr>
     </thead>
     <tfoot>
@@ -31,7 +62,7 @@
             <th>Length</th>
             <th>Term</th>
             <th>Meaning</th>
-
+            <th>Send</th>
         </tr>
     </tfoot>
 
@@ -42,6 +73,10 @@
                 <td>@item.vocabLength</td>
                 <td>@item.vocab</td>
                 <td>@item.meaning</td>
+                <td>
+                    
+                    <i class="fa fa-plus-circle"></i>
+                </td>
             </tr>
         }
 
@@ -60,6 +95,22 @@
             $('#example').DataTable({
                 "order": [[0, "desc"]]
             });
+
+
+            var table = $('#example').DataTable();
+
+            $('#example tbody').on('click', 'tr', function () {
+                var d = table.row(this).data();
+
+                $("#raw").val(d[1]);
+                $("#meaning").val(d[2]);
+
+                console.log(table.row(this).data());
+            });
+
         });
+
+
+       
     </script>
 }

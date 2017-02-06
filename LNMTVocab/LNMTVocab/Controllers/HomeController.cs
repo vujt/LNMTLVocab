@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 
 using LNMTVocab.Data;
+using System.Text;
+using System.Net;
+using System.IO;
 
 namespace LNMTVocab.Controllers
 {
@@ -15,8 +18,41 @@ namespace LNMTVocab.Controllers
         public ActionResult Index()
         {
             var myList = ReadFile();
+          //  SendData();
 
             return View(myList);
+        }
+
+        public void SendData()
+        {
+            var request = (HttpWebRequest)WebRequest.Create("http://lnmtl.com/termProposition");
+
+            var postData = "_token=lsu5YjVWugao5azbPp52VbDBa63uXnaJMX26lDfl";
+            postData += "&type=create";
+            postData += "&novel_id=19";
+            postData += "&raw=test";
+            postData += "&meaning=test";
+            postData += "&author_note=note";
+            
+
+            var data = Encoding.ASCII.GetBytes(postData);
+
+            request.Method = "POST";
+            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentLength = data.Length;
+
+            using (var stream = request.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);
+            }
+
+            //var response = (HttpWebResponse)request.GetResponse();
+
+            //var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+                   
+            //response.Close();
+
+            //  return View();
         }
 
         

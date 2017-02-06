@@ -23,3 +23,4 @@ D:\Projects\Github\LNMTLVocab\LNMTVocab\LNMTVocab\obj\Debug\LNMTVocab.dll
 D:\Projects\Github\LNMTLVocab\LNMTVocab\LNMTVocab\obj\Debug\LNMTVocab.pdb
 D:\Projects\Github\LNMTLVocab\LNMTVocab\LNMTVocab\bin\Newtonsoft.Json.dll
 D:\Projects\Github\LNMTLVocab\LNMTVocab\LNMTVocab\bin\Newtonsoft.Json.xml
+D:\Projects\Github\LNMTLVocab\LNMTVocab\LNMTVocab\obj\Debug\LNMTVocab.csprojResolveAssemblyReference.cache
